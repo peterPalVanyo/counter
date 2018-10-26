@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Request Counter</title>
 </head>
 <body>
+    <h1>{{counts}}</h1>
+
+    <a href="/request_counter">Link to the counter</a>
+    <a href="/statistics">Link to the statistics</a>
+
+     <form action="/request_counter" method="post">
+        <input type="submit">
+     </form>
 
 </body>
 </html>
