@@ -8,5 +8,25 @@
 
     {{text}}
 
+
+    <ul>
+        {% for key, value in text.items() %}
+        <li>{{ key }} {{ value }}</li>
+        {% endfor %}
+    </ul>
+
+    <!--<table>-->
+        <!--<tr>-->
+            <!--<th>Method</th>-->
+            <!--<th>Count</th>-->
+        <!--</tr>-->
+        <!--{% for key, value in text.items() %}-->
+        <!--<tr>-->
+            <!--<d>{{ key }}</d>-->
+            <!--<d>{{ value }}</d>-->
+        <!--</tr>-->
+        <!--{% endfor %}-->
+    <!--</table>-->
+
 </body>
 </html>

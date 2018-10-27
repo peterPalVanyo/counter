@@ -36,9 +36,10 @@ def delete_couter():
 def statistics():
     with open("request_counts.txt", "w") as fo:
         fo.write(str(counts))
-    text = open('request_counts.txt', 'r+')
-    content = text.read()
-    return render_template('statistics.html', text = content)
+    # text = open('request_counts.txt', 'r+')
+    # content = dict(text.read()
+    print(counts)
+    return render_template('statistics.html', text = counts)
 
 if __name__ =='__main__':
     app.run(
